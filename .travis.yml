@@ -1,6 +1,6 @@
 language: python
 before_install:
- - chmod +x ./flaskapp/st.sh
+ - chmod +x ./st.sh
 install:
  - pip3 install flask
  - pip3 install gunicorn
@@ -13,4 +13,3 @@ install:
 script:
  - cd flaskapp
  - ./st.sh
-
