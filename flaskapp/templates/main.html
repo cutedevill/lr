@@ -4,7 +4,13 @@
     <title></title>
   </head>
   <body>
-    <h1>Selected picture</h1>
-    <img src="{{ image_name }}" alt="N/F">
+    <h1>Selected pictures</h1>
+    <img src="{{ image_name1 }}" alt="N/F">
+    <img src="{{ image_name2 }}" alt="N/F">
+    <h2>Enter blend coeffitient</h2>
+    <form action="" method="post" enctype="multipart/form-data">
+        <p><input type="text" name=coeff value="{{ coeff }}">
+        <input type="submit" value="Blend">
+    </form>
   </body>
 </html>
