@@ -10,4 +10,4 @@ install:
  - pip3 install keras
 script:
  - cd flaskapp
- - ./st.sh
+ - ../st.sh
