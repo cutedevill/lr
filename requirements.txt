@@ -4,5 +4,3 @@ requests
 flask-bootstrap
 flask-wtf
 pillow
-tensorflow==2.0.0-alpha0
-keras
