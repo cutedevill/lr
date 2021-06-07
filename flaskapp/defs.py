@@ -25,10 +25,10 @@ def GRAPHS(path, root, name):
     import matplotlib.pyplot as plt
     image = io.imread(path)
 
-    _ = plt.hist(image.ravel(), bins = 64, color = 'orange', )
-    _ = plt.hist(image[:, :, 0].ravel(), bins = 64, color = 'red', alpha = 0.5)
-    _ = plt.hist(image[:, :, 1].ravel(), bins = 64, color = 'Green', alpha = 0.5)
-    _ = plt.hist(image[:, :, 2].ravel(), bins = 64, color = 'Blue', alpha = 0.5)
+    _ = plt.hist(image.ravel(), bins = 64, color = 'Orange', )
+    _ = plt.hist(image[:, :, 0].ravel(), bins = 64, color = 'Red', alpha = 0.7)
+    _ = plt.hist(image[:, :, 1].ravel(), bins = 64, color = 'Green', alpha = 0.7)
+    _ = plt.hist(image[:, :, 2].ravel(), bins = 64, color = 'Blue', alpha = 0.7)
     _ = plt.xlabel('Intensity Value')
     _ = plt.ylabel('Count')
     _ = plt.legend(['Total', 'Red Channel', 'Green Channel', 'Blue Channel'])

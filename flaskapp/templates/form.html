@@ -1,12 +1,16 @@
 <!doctype html>
 <head>
-  <title>Upload new File</title>
+  <title>Upload</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/form.css') }}">
 </head>
 <body>
-  <h1>Upload files</h1>
-  <form action="" method=post enctype=multipart/form-data>
-      <p><input type=file name=file1>
-      <p><input type=file name=file2>
-      <input type=submit value=Upload>
-  </form>
+  <h1>Upload page</h1>
+  <div class="form">
+    <p class="upload_title">Upload form</p>
+    <form action="" method=post enctype=multipart/form-data>
+        <p><input type=file name=file1>
+        <p><input type=file name=file2>
+        <input type=submit value=Upload>
+    </form>
+  </div>
 </body>
